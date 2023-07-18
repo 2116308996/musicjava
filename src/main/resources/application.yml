@@ -1,0 +1,21 @@
+server:
+  port: 8081
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/music?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: zhu.5201314
+#  security:
+#    user:
+#      name: user
+#      password: 111111
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+#markerhub:
+#  jwt:
+#    header: Authorization
+#    expire: 604800 #7天秒单位
+#    secret: asdwfe4521sdef4578kijs54sw1423se
